@@ -384,11 +384,9 @@
 
 // pages/_app.tsx
 'use client';
-import type { AppProps } from 'next/app';
+
 import Home from './Home/page';
 
-function MyApp({ pageProps }: AppProps) {
-  return <Home {...pageProps} />;
+export default function MainPage() {
+  return <Home />;
 }
-
-export default MyApp;
